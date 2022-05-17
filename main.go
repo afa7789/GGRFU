@@ -69,20 +69,20 @@ func main() {
 
 	k := new(big.Int).Mul(reserves.Reserve1, reserves.Reserve0)
 
-	ammount := big.NewInt(100000000000000)
+	amount := big.NewInt(100000000000000)
 
 	// EtherDecimal
 	// >> 1wbtc
 	// >> 1eth
-	// y - (ammount) *x = k
-	// x = k / y - (ammount)
+	// y - (amount) *x = k
+	// x = k / y - (amount)
 	//5107248059731487396846
 	// 		 100000000000000
 	new1 := new(big.Int).Div(
 		k,
 		new(big.Int).Sub(
 			reserves.Reserve1,
-			ammount,
+			amount,
 		),
 	)
 	output0 := new(big.Int).Sub(new1, reserves.Reserve0)
@@ -92,10 +92,10 @@ func main() {
 	fmt.Println("-----")                // constant
 	fmt.Printf("k: %+v;\n", k.String()) // constant
 	fmt.Println("-----")                // constant
-	fmt.Printf("Ammount to simulate swap: %s %+v;\n", token1Symbol, weiToEther(ammount).String())
-	fmt.Printf("new reserve0 = %+v;\nold reserve0 = %+v;\nammount out = %v;\n",
+	fmt.Printf("amount to simulate swap: %s %+v;\n", token1Symbol, weiToEther(amount).String())
+	fmt.Printf("new reserve0 = %+v;\nold reserve0 = %+v;\namount out = %v;\n",
 		new1.String(),
-		reserves.Reserve0,
+		reserves.Reserve0.String(),
 		satoshiToBitcoin(output0).Text('f', 8),
 	)
 

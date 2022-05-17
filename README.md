@@ -56,10 +56,10 @@ Wrapped Ether reserve:   WETH 5117.883978; token decimals:18;
 -----
 k: 179231689313875619843013296611368;
 -----
-Ammount to simulate swap: WETH 0.0001;
+Amount to simulate swap: WETH 0.0001;
 new reserve0 = 35020663536;
-old reserve0 = +35020662852;
-ammount out = 0.00000684;
+old reserve0 = 35020662852;
+amount out = 0.00000684;
 ```
 
 Compare to the value in the uniswap interface at same timestamp:
