@@ -87,8 +87,13 @@ Compare to the value in the uniswap interface at same timestamp:
 
 
 UniswapModule | 0x9ac91386b4c6300d600c54882145d8eabdd1b5fd
+
 The Contract Address 0x9ac91386b4c6300d600c54882145d8eabdd1b5fd 
+
 SushiSwapModule | 0xbf1e8e287579afad68cc82fc801c3c07b8c5ae59
+
 CurveModule | 0xbfd0d27fb6a6d3f509143c31a390a53069760ca7
+
 EIP173ProxyWithReceive | 0x8a71704f0f8891f92417faf840568ecee0be0918
+
 Slingshot | 0x71727089c52efc4ad7c3fb6565c865463418d7af
